@@ -1,0 +1,137 @@
+:root {
+    /* --pastel-blue:  */
+    --pastel-green: #b8e4c9;
+    --pastel-pink: #ffe0d3;
+    --pastel-yellow: #e8f0fe;
+    --text-color: #4a4a4a;
+    --border-radius: 10px;
+    --transition: 0.3s ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: var(--pastel-blue);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 2rem;
+    background: var(--pastel-pink);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    animation: fadeIn 1s;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.8s;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    background: var(--pastel-yellow);
+    transition: var(--transition);
+  }
+  
+  .form-group input:focus, .form-group textarea:focus {
+    border-color: var(--pastel-green);
+    outline: none;
+    box-shadow: 0 0 5px var(--pastel-green);
+  }
+  
+  .btn-submit {
+    padding: 0.8rem 1.5rem;
+    background: var(--pastel-green);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+  
+  .btn-submit:hover {
+    background: var(--pastel-blue);
+    transform: scale(1.05);
+  }
+  
+  .job-listing-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .job-listing-section li {
+    background: var(--pastel-pink);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s;
+  }
+  .job-listing-section{
+    width: 100%;
+    padding: 50px;
+  }
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--pastel-green);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }

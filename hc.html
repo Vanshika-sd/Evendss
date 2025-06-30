@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center</title>
+    <link rel="stylesheet" href="hc.css">
+    <script defer src="hc.js"></script>
+</head>
+<body>
+    <div class="contain">
+        <header>
+            <h1 class="title">Help Center</h1>
+            <p>How can we assist you today?</p>
+        </header>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq1')">
+                    <h3>How do I book a vendor?</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="faq-answer" id="faq1">
+                    <p>To book a vendor, simply search for them using the search bar and click 'Book Now' on their profile.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq2')">
+                    <h3>How do I contact customer support?</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="faq-answer" id="faq2">
+                    <p>You can reach out to our support team via the contact form below or through the live chat option.</p>
+                </div>
+            </div>
+            <!-- Add more FAQs here -->
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <h2>Still have questions? Contact Us</h2>
+            <form action="submit-query.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+
+        <div class="foot">
+            <div class="usp-container">
+                <div class="set">
+                    <div class="usp-grid">
+                        <div class="usp-card">
+                            <div class="usp-icon">📊</div>
+                            <h4 class="usp-title">Comprehensive Profiles</h3>
+                            <p class="usp-description">View detailed vendor profiles with reviews, photos, and prices.
+                            </p>
+                        </div>
+                        <div class="usp-card">
+                            <div class="usp-icon">💬</div>
+                            <h4 class="usp-title">Instant Communication</h3>
+                            <p class="usp-description">Message vendors directly for quotes and inquiries.</p>
+                        </div>
+                        <div class="usp-card">
+                            <div class="usp-icon">⭐</div>
+                            <h4 class="usp-title">Customer Reviews</h3>
+                            <p class="usp-description">Read real reviews to make informed decisions.</p>
+                        </div>
+                    </div>
+                    <div class="log">
+                        <div><img src="log1-removebg-preview.png" alt="" height="75px" width="180px"></div><br>
+                        <div>
+                            <img src="icons8-facebook-logo-40.png" alt=""><br><br>
+                            <hr>
+                            <img src="icons8-instagram-50.png" alt=""><br><br>
+                            <hr>
+                            <img src="icons8-twitter-bird-48.png" alt=""><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footerrr">
+                <section id="how-it-works">
+                    <h4>How It Works</h4>
+                    <div class="steps">
+                        <div class="step" data-aos="zoom-in">
+                            <h4>1. Search</h3>
+                            <p>Find vendors based on location, category, and budget.</p>
+                        </div>
+                        <div class="step" data-aos="zoom-in" data-aos-delay="100">
+                            <h4>2. Book</h3>
+                            <p>Choose the best vendor and confirm your booking.</p>
+                        </div>
+                        <div class="step" data-aos="zoom-in" data-aos-delay="200">
+                            <h4>3. Celebrate</h3>
+                            <p>Enjoy your event while we handle the rest.</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <ul>
+                        <li>
+                            <h4>A Client Advisor is Available at <a class="sel">1800 103 9988</a>.
+                                You can also <a class="sel">email us</a>.</h3>
+                        </li>
+                        <li>FAQ's</li>
+                    </ul>
+                </section>
+            </div>
+            <hr>
+            <div class="footerrr lf">
+                <div class="hlast">
+                    <div>
+                        <img src="in.svg">
+                        <a class="sel"> India</a>
+                    </div>
+                </div>
+                <div><span class="laspan lsl">
+                        © 2024 Event Planning Platform. All rights reserved.
+                    </span>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>

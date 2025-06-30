@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.bage{
+    border: 2px solid orange;
+    border-radius: 8px;
+    margin-left: 8px;
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+    font-weight: lighter;
+}
+.ba:hover {
+    background-color: rgb(247, 161, 91);
+    transition: ease-in-out 0.4s;
+}
+.be{  
+    border-radius: 8px;
+    margin-left: 8px;
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+    font-weight: lighter;
+    background-color: green;
+    color: white;
+}
+.sendbox{
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    width: 98.5%;
+}
+.type{
+    display: flex;
+}
+.sendbtn{
+    width: 14%;
+}
+.snd{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+} 
+#chat-messages{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.msg{
+    color: white;
+background-color: #949c9d;
+    width: max-content;
+    border-radius: 17px;
+    padding: 12px;
+    border-bottom-right-radius: 0;
+    margin: 5px;
+}
+.hidden{
+    display: none;
+}
+.receiv{    
+    background-color: orange;
+    border-radius: 17px;
+    border-bottom-left-radius: 0;
+}
+.users{
+    width:100%;
+    /* margin: 5px; */
+    /* margin-bottom: 14px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* background-color: rgb(142, 189, 191); */
+    /* background: linear-gradient(to right, #a5e0da, #33aea6, #58cbc3, #46d3d8, #a28da2); */
+    height: 7vh;
+    padding: 5px;
+    padding-bottom: 15px;
+    display: flex;
+    /* border-bottom: 1px solid gray; */
+    align-items: center;
+    /* border-radius: 8px; */
+}
+.users h2{
+    font-weight: lighter;
+    /* color: aliceblue; */
+}
+.search{
+    margin: 19px;
+}
+.search img{
+    margin: 5px;
+}
+.insearch{
+    height: 39px;
+    width: 100%;
+    border-radius: 17px;
+    border-width: 2px;
+}
