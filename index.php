@@ -48,7 +48,7 @@
                     </div>
                     <div class="selt">
                         <div
-                            style="background-image:url(imgs/how-to-become-an-event-organiser-uk.webp);background-size: cover;">
+                            style="background-image:url('imgs/how-to-become-an-event-organiser-uk.webp');background-size: cover;">
                         </div>
                         <button type="button" class="w-100 btn btn-lg btn-primary">Explore</button>
                     </div>
